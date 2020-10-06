@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domaci05</title>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div>
+          <button id="first-btn" onclick="welcomeMsg()">Click Me!</button>
+          <p id="change-this-text">Hi.</p>
+          <button id="change-txt-btn" onclick="changeTxt()">Change text</button>
+        </div>
+        <div>
+          <hr />
+          <img
+            id="change-this-image"
+            onmouseover="changeImg()"
+            src="images/hello.jpg"
+            alt="hello"
+          />
+          <hr />
+        </div>
+        <div>
+          <div>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <input
+              type="button"
+              onclick="getGender()"
+              value="Check selected Gender"
+            />
+            <p>Selected Gender: <span id="selected-gender"></span></p>
+          </div>
+          <hr />
+        </div>
+        <div>
+          <label for="first-name">First name:</label>
+          <input
+            class="input-field"
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="Your first name"
+          /><br />
+          <label for="last-name">Last name:</label>
+          <input
+            class="input-field"
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Your last name"
+          /><br />
+          <label for="animal">Favourite animal:</label>
+          <input
+            class="input-field"
+            type="text"
+            id="animal"
+            name="animal"
+            placeholder="Your favourite animal"
+          /><br /><br />
+          <button onclick="submitLocation()">Submit</button>
+          <br />
+          <button onclick="showInput()">Show input</button>
+          <br />
+          <span id="input-result"> </span>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
